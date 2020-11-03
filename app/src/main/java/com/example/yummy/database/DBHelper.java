@@ -1,4 +1,4 @@
-package com.example.yummy;
+package com.example.yummy.database;
 
 import android.content.ContentValues;
 import android.content.Context;

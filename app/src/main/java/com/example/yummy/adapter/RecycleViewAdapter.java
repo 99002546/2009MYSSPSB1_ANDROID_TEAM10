@@ -1,0 +1,72 @@
+package com.example.yummy.adapter;
+
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.yummy.HomeActivity;
+import com.example.yummy.R;
+import com.example.yummy.RecyclerData;
+
+public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.ViewHolder> {
+
+    RecyclerData[] recyclerData;
+    Context context;
+
+    public RecycleViewAdapter(RecyclerData[] myMovieData, HomeActivity activity) {
+        this.recyclerData = myMovieData;
+        this.context = activity;
+    }
+
+    @NonNull
+    @Override
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
+        View view = layoutInflater.inflate(R.layout.recycler_item_list,parent,false);
+        ViewHolder viewHolder = new ViewHolder(view);
+        return viewHolder;
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        final RecyclerData recyclerDataList = recyclerData[position];
+        holder.textViewName.setText(recyclerDataList.getMovieName());
+        holder.textViewDate.setText(recyclerDataList.getMovieDate());
+        holder.movieImage.setImageResource(recyclerDataList.getMovieImage());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(context, recyclerDataList.getMovieName(), Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
+    @Override
+    public int getItemCount() {
+        return recyclerData.length;
+    }
+
+
+    public class ViewHolder extends RecyclerView.ViewHolder{
+        ImageView movieImage;
+        TextView textViewName;
+        TextView textViewDate;
+
+        public ViewHolder(@NonNull View itemView) {
+            super(itemView);
+            movieImage = itemView.findViewById(R.id.imageview);
+            textViewName = itemView.findViewById(R.id.textName);
+            textViewDate = itemView.findViewById(R.id.textdate);
+
+        }
+    }
+
+}
