@@ -20,7 +20,7 @@
 
             <ImageView
                 android:layout_margin="10dp"
-                android:src="@drawable/food"
+                android:src="@drawable/almond_and_rose_kheer"
                 android:id="@+id/imageview"
                 android:layout_width="match_parent"
                 android:layout_height="170dp"/>

@@ -2,37 +2,39 @@ package com.example.yummy;
 
 public class RecyclerData {
 
-    private String movieName;
-    private String movieDate;
-    private Integer movieImage;
+    private String recipeName;
+    private String recipeData;
+    private Integer recipeImage;
 
-    public RecyclerData(String movieName, String movieDate, Integer movieImage) {
-        this.movieName = movieName;
-        this.movieDate = movieDate;
-        this.movieImage = movieImage;
+
+    public RecyclerData(String recipeName, String recipeData, Integer recipeImage) {
+        this.recipeName = recipeName;
+        this.recipeData = recipeData;
+        this.recipeImage = recipeImage;
     }
 
-    public String getMovieName() {
-        return movieName;
+    public String getRecipeName() {
+        return recipeName;
     }
 
-    public void setMovieName(String movieName) {
-        this.movieName = movieName;
+    public void setRecipeName(String recipeName) {
+        this.recipeName = recipeName;
     }
 
-    public String getMovieDate() {
-        return movieDate;
+    public String getRecipeData() {
+        return recipeData;
     }
 
-    public void setMovieDate(String movieDate) {
-        this.movieDate = movieDate;
+    public void setRecipeData(String recipeData) {
+        this.recipeData = recipeData;
     }
 
-    public Integer getMovieImage() {
-        return movieImage;
+    public Integer getRecipeImage() {
+        return recipeImage;
     }
 
-    public void setMovieImage(Integer movieImage) {
-        this.movieImage = movieImage;
+    public void setRecipeImage(Integer recipeImage) {
+        this.recipeImage = recipeImage;
     }
 }
+

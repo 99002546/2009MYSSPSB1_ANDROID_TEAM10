@@ -38,7 +38,7 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         final RecyclerData recyclerDataList = recyclerData[position];
         holder.textViewName.setText(recyclerDataList.getMovieName());
-        holder.textViewDate.setText(recyclerDataList.getMovieDate());
+        holder.textViewDate.setText(recyclerDataList.getRecipeData());
         holder.movieImage.setImageResource(recyclerDataList.getMovieImage());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {

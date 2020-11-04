@@ -21,13 +21,16 @@ public class HomeActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         RecyclerData[] recyclerData = new RecyclerData[]{
-                new RecyclerData("Avengers","2019 film",R.drawable.food),
-                new RecyclerData("Venom","2018 film",R.drawable.food),
-                new RecyclerData("Batman Begins","2005 film",R.drawable.food),
-                new RecyclerData("Jumanji","2019 film",R.drawable.food),
-                new RecyclerData("Good Deeds","2012 film",R.drawable.food),
-                new RecyclerData("Hulk","2003 film",R.drawable.food),
-                new RecyclerData("Avatar","2009 film",R.drawable.food),
+                new RecyclerData("Kesar Pista Phirni","veg",R.drawable.kesari_pista_phirni),
+                new RecyclerData("Almond And Rose Kheer","veg", R.drawable.almond_and_rose_kheer),
+                new RecyclerData("Korean Egg Roll","Non-Veg",R.drawable.korean_egg_roll),
+                new RecyclerData("Samosa","veg",R.drawable.samosa),
+                new RecyclerData("Crispy Herb Chicken","Non-Veg",R.drawable.crispy_herb_chicken),
+                new RecyclerData("Korean BibimBap","Non-Veg",R.drawable.korean_bibimbap),
+                new RecyclerData("Veg Hakka Noodles","veg",R.drawable.veg_hakka_noodles),
+                new RecyclerData("Til-E-Paneer","veg",R.drawable.til_e_paneer),
+                new RecyclerData("Super Food Salad","veg",R.drawable.super_food_salad),
+
         };
 
         RecycleViewAdapter myAdapter = new RecycleViewAdapter(recyclerData,HomeActivity.this);
