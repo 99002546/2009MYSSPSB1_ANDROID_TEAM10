@@ -4,8 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 
 //import com.example.yummy.adapter.MethodViewAdapter;
@@ -17,16 +19,17 @@ import java.util.List;
 
 public class DetailsActivity extends AppCompatActivity {
 
+    private Button button;
+    Context context;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
+        //button = (Button) findViewById(R.id.videoButton);
 
         Intent intent = getIntent();
         String position = intent.getStringExtra("position");
-        //Button button = findViewById(R.id.videoButton);
-
-
 
 //        RecyclerView recyclerViewIngd = findViewById(R.id.reViewIngd);
 //        recyclerViewIngd.setHasFixedSize(true);
@@ -53,6 +56,16 @@ public class DetailsActivity extends AppCompatActivity {
                     new RecipeData("4. Add the cardamom powder and saffron, and mix well.When the mixture attains a thick custard-like consistency, remove from heat and stir in the low-calorie sweetener."),
                     new RecipeData("5. Pour the mixture into 4 individual earthenware bowls while still warm. Sprinkle sliced pistachios and refrigerate for at least 2 hours.")
             };
+//            button.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    String position = "1";
+//                    Intent intent1 = new Intent(context, VideoActivity.class);
+//                    intent1.putExtra("position", position);
+//                    startActivity(intent1);
+//                }
+//
+//            });
             RecipeViewAdapter myAdapter = new RecipeViewAdapter(recipeData,DetailsActivity.this);
             recyclerViewMethod.setAdapter(myAdapter);
         }
@@ -75,6 +88,16 @@ public class DetailsActivity extends AppCompatActivity {
                     new RecipeData("5. Set aside to cool. Once cool add rose water and mix. Refrigerate till serving"),
                     new RecipeData("6. Roast some almond slivers in an oven for 180 degrees for 5 minutes, until golden brown. Garnish with slivers and dried rose petals before serving.")
             };
+//            button.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    String position = "2";
+//                    Intent intent1 = new Intent(context, VideoActivity.class);
+//                    intent1.putExtra("position", position);
+//                    startActivity(intent1);
+//                }
+//
+//            });
             RecipeViewAdapter myAdapter = new RecipeViewAdapter(recipeData,DetailsActivity.this);
             recyclerViewMethod.setAdapter(myAdapter);
         }
@@ -98,6 +121,16 @@ public class DetailsActivity extends AppCompatActivity {
                     new RecipeData("7. Pour the remaining mixture into the pan. Repeat the rolling step."),
                     new RecipeData("8. Cool the egg role for a while before cut. Ready to serve. Eat best with soup.")
             };
+//            button.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    String position = "3";
+//                    Intent intent1 = new Intent(context, VideoActivity.class);
+//                    intent1.putExtra("position", position);
+//                    startActivity(intent1);
+//                }
+//
+//            });
             RecipeViewAdapter myAdapter = new RecipeViewAdapter(recipeData,DetailsActivity.this);
             recyclerViewMethod.setAdapter(myAdapter);
         }
@@ -129,6 +162,16 @@ public class DetailsActivity extends AppCompatActivity {
                     new RecipeData("8. Serve hot.")
 
             };
+//            button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                String position = "4";
+//                Intent intent1 = new Intent(context, VideoActivity.class);
+//                intent1.putExtra("position", position);
+//                startActivity(intent1);
+//            }
+//
+//        });
             RecipeViewAdapter myAdapter = new RecipeViewAdapter(recipeData,DetailsActivity.this);
             recyclerViewMethod.setAdapter(myAdapter);
         }
@@ -156,6 +199,16 @@ public class DetailsActivity extends AppCompatActivity {
                     new RecipeData("7. Serve with a Ranch Dip.")
 
             };
+//            button.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    String position = "5";
+//                    Intent intent1 = new Intent(context, VideoActivity.class);
+//                    intent1.putExtra("position", position);
+//                    startActivity(intent1);
+//                }
+//
+//            });
             RecipeViewAdapter myAdapter = new RecipeViewAdapter(recipeData,DetailsActivity.this);
             recyclerViewMethod.setAdapter(myAdapter);
         }
@@ -185,6 +238,16 @@ public class DetailsActivity extends AppCompatActivity {
                     new RecipeData("4. Cook eggs, sunny side up."),
                     new RecipeData("5. Assemble by placing the rice in the stone bowl, topped with sautéed veg, chicken and prawns. Top with fried egg. Serve with gochujang sauce on side.")
             };
+//            button.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    String position = "6";
+//                    Intent intent1 = new Intent(context, VideoActivity.class);
+//                    intent1.putExtra("position", position);
+//                    startActivity(intent1);
+//                }
+//
+//            });
             RecipeViewAdapter myAdapter = new RecipeViewAdapter(recipeData,DetailsActivity.this);
             recyclerViewMethod.setAdapter(myAdapter);
         }
@@ -217,6 +280,16 @@ public class DetailsActivity extends AppCompatActivity {
                     new RecipeData("9. Mix them thoroughly with the vegetables.")
 
             };
+//            button.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    String position = "7";
+//                    Intent intent1 = new Intent(context, VideoActivity.class);
+//                    intent1.putExtra("position", position);
+//                    startActivity(intent1);
+//                }
+//
+//            });
             RecipeViewAdapter myAdapter = new RecipeViewAdapter(recipeData,DetailsActivity.this);
             recyclerViewMethod.setAdapter(myAdapter);
         }
@@ -244,6 +317,16 @@ public class DetailsActivity extends AppCompatActivity {
                     new RecipeData("4. Serve hot, garnished with lemon and onion rings.")
 
             };
+//            button.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    String position = "8";
+//                    Intent intent1 = new Intent(context, VideoActivity.class);
+//                    intent1.putExtra("position", position);
+//                    startActivity(intent1);
+//                }
+//
+//            });
             RecipeViewAdapter myAdapter = new RecipeViewAdapter(recipeData, DetailsActivity.this);
             recyclerViewMethod.setAdapter(myAdapter);
         }
@@ -268,6 +351,16 @@ public class DetailsActivity extends AppCompatActivity {
                     new RecipeData("3. Wash, massage, and tear up the kale by hand into bite-sized pieces. Drain the boiled or canned chickpeas and add them to the bowl of shrunken and softened kale. Add onion, strawberries, and blueberries to the mix."),
                     new RecipeData("4. Toss the dressing into the salad mixture, and evenly coat all the ingredients. Sprinkle sunflower seeds over top.")
             };
+//            button.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    String position = "9";
+//                    Intent intent1 = new Intent(context, VideoActivity.class);
+//                    intent1.putExtra("position", position);
+//                    startActivity(intent1);
+//                }
+//
+//            });
             RecipeViewAdapter myAdapter = new RecipeViewAdapter(recipeData,DetailsActivity.this);
             recyclerViewMethod.setAdapter(myAdapter);
         }

@@ -1,6 +1,7 @@
 package com.example.yummy.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.yummy.ApiActivity;
 import com.example.yummy.DetailsActivity;
 import com.example.yummy.R;
 import com.example.yummy.RecipeData;
@@ -43,6 +45,10 @@ public class RecipeViewAdapter extends RecyclerView.Adapter<RecipeViewAdapter.Vi
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //String position = "1";
+                Intent intent1 = new Intent(context, ApiActivity.class);
+                //intent1.putExtra("position", position);
+                context.startActivity(intent1);
 
             }
         });

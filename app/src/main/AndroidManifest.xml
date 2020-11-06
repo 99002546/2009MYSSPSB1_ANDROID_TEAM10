@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_logo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Yummy">
+        <activity android:name=".ApiActivity"></activity>
+        <activity android:name=".VideoActivity" />
         <activity android:name=".DetailsActivity" />
-
         <activity
             android:name=".HomeActivity"
             android:exported="true" />
