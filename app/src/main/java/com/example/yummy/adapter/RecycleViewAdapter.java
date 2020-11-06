@@ -1,6 +1,7 @@
 package com.example.yummy.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.yummy.DetailsActivity;
 import com.example.yummy.HomeActivity;
 import com.example.yummy.R;
 import com.example.yummy.RecyclerData;
@@ -45,6 +47,9 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
             @Override
             public void onClick(View v) {
                 Toast.makeText(context, recyclerDataList.getRecipeName(), Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(context, DetailsActivity.class);
+                intent.putExtra("position", recyclerDataList.getRecipeId());
+                context.startActivity(intent);
             }
         });
     }

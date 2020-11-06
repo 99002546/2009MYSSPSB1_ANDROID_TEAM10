@@ -5,12 +5,14 @@ public class RecyclerData {
     private String recipeName;
     private String recipeData;
     private Integer recipeImage;
+    private String recipeId;
 
 
-    public RecyclerData(String recipeName, String recipeData, Integer recipeImage) {
+    public RecyclerData(String recipeName, String recipeData, Integer recipeImage, String recipeId) {
         this.recipeName = recipeName;
         this.recipeData = recipeData;
         this.recipeImage = recipeImage;
+        this.recipeId = recipeId;
     }
 
     public String getRecipeName() {
@@ -35,6 +37,14 @@ public class RecyclerData {
 
     public void setRecipeImage(Integer recipeImage) {
         this.recipeImage = recipeImage;
+    }
+
+    public String getRecipeId() {
+        return recipeId;
+    }
+
+    public void setRecipeId(String recipeId) {
+        this.recipeId = recipeId;
     }
 }
 

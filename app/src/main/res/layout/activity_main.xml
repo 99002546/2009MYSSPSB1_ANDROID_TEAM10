@@ -12,8 +12,10 @@
         android:id="@+id/username"
         android:layout_width="250dp"
         android:layout_height="40dp"
+        android:drawableLeft="@drawable/ic_action_name"
         android:background="#11111000"
         android:hint="User Name"
+
         android:layout_marginTop="50dp"/>
 
     <EditText
@@ -22,8 +24,9 @@
         android:layout_height="40dp"
         android:background="#11111000"
         android:hint="Password"
+        android:drawableLeft="@drawable/ic_action_password"
         android:inputType="textPassword"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         android:layout_below="@+id/username"/>
 
     <EditText
@@ -32,8 +35,9 @@
         android:layout_height="40dp"
         android:background="#11111000"
         android:hint="Confirm Password"
+        android:drawableLeft="@drawable/ic_action_password"
         android:inputType="textPassword"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         android:layout_below="@+id/password"/>
 
     <Button
@@ -41,7 +45,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Register"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         android:layout_below="@+id/confirm"/>
 
     <Button
