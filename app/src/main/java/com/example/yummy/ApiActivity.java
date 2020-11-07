@@ -38,7 +38,7 @@ public class ApiActivity extends YouTubeBaseActivity {
         apiButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                youTubePlayerView.initialize("AIzaSyBdVZfgwSb_ACzQxDoRMIkF63tql7FYia8",onInitializedListener);
+                youTubePlayerView.initialize("AIzaSyAyIdUDh5QySUMZrtNplFOYflYwcWF7aGY",onInitializedListener);
             }
         });
     }

@@ -39,12 +39,14 @@ dependencies {
     //noinspection GradleCompatible
     implementation 'com.android.support:design:28.0.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation files('C:\\Users\\CTEA\\Desktop\\team10\\2009MYSSPSB1_ANDROID_TEAM10\\app\\libs\\YouTubeAndroidPlayerApi.jar')
 
 
-    implementation files('C:\\Users\\chandhu\\Desktop\\Android\\2009MYSSPSB1_ANDROID_TEAM10\\app\\libs\\YouTubeAndroidPlayerApi.jar')
+//    implementation files('C:\\Users\\chandhu\\Desktop\\Android\\2009MYSSPSB1_ANDROID_TEAM10\\app\\libs\\YouTubeAndroidPlayerApi.jar')
     compile files('libs/YouTubeAndroidPlayerApi.jar')
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.google.android.exoplayer:exoplayer:2.7.3'
 
 }

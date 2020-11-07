@@ -14,6 +14,7 @@ import com.example.yummy.ApiActivity;
 import com.example.yummy.DetailsActivity;
 import com.example.yummy.R;
 import com.example.yummy.RecipeData;
+import com.example.yummy.ThirdActivity;
 
 public class RecipeViewAdapter extends RecyclerView.Adapter<RecipeViewAdapter.ViewHolder> {
 
@@ -45,10 +46,8 @@ public class RecipeViewAdapter extends RecyclerView.Adapter<RecipeViewAdapter.Vi
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //String position = "1";
-                Intent intent1 = new Intent(context, ApiActivity.class);
-                //intent1.putExtra("position", position);
-                context.startActivity(intent1);
+                Intent intent = new Intent(context, ThirdActivity.class);
+                context.startActivity(intent);
 
             }
         });
