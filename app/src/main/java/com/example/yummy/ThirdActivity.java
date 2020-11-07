@@ -56,7 +56,7 @@ public class ThirdActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        Uri videoUrl=Uri.parse("https://imgur.com/YDriGoM.mp4");
+        Uri videoUrl=Uri.parse("https://imgur.com/OzQTATX.mp4");
 
         LoadControl loadControl=new DefaultLoadControl();
         BandwidthMeter bandwidthMeter = new DefaultBandwidthMeter();

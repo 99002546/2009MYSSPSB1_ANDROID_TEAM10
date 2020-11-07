@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/almond_and_rose_kheer">
+    android:background="@drawable/gradient">
 
     <com.google.android.exoplayer2.ui.PlayerView
         android:layout_width="match_parent"
